@@ -2,8 +2,9 @@
 // übergeben werden kann. Jeder Eintrag öffnet das jeweilige Modell im Browser
 // mit vorausgefülltem Eingabefeld.
 //
-// Die Deep-Link-URLs stammen aus der PromptLib (AI_PLATFORMS) und werden hier
-// für den Postkarten-Anwendungsfall wiederverwendet.
+// Die Deep-Link-URLs für ChatGPT, Gemini & Co. orientieren sich an den
+// Integrationen der PromptLib und werden hier für den Postkarten-Anwendungsfall
+// wiederverwendet. Es werden nur bildfähige Modelle angeboten.
 
 // Konservative Obergrenze für URL-Längen über alle Browser hinweg.
 export const URL_LIMIT = 2000
@@ -29,6 +30,30 @@ export const MODELS = [
     bildfaehig: true,
     hinweis: 'Erzeugt die Postkartenbilder direkt in Google Gemini.',
     getUrl: (prompt) => `https://gemini.google.com/app?q=${encodeURIComponent(prompt)}`,
+  },
+  {
+    id: 'bing',
+    name: 'Bing Image Creator',
+    color: '#0f7b6c',
+    bildfaehig: true,
+    hinweis: 'Erzeugt sofort Bilder mit DALL·E 3 (kostenlos). Reiner Bildgenerator – am besten für die Vorderseite.',
+    getUrl: (prompt) => `https://www.bing.com/images/create?q=${encodeURIComponent(prompt)}`,
+  },
+  {
+    id: 'copilot',
+    name: 'Copilot',
+    color: '#7e57c2',
+    bildfaehig: true,
+    hinweis: 'Microsoft Copilot (DALL·E 3). Falls das Eingabefeld nicht vorausgefüllt ist, einfach den kopierten Prompt einfügen.',
+    getUrl: (prompt) => `https://copilot.microsoft.com/?q=${encodeURIComponent(prompt)}`,
+  },
+  {
+    id: 'grok',
+    name: 'Grok',
+    color: '#111827',
+    bildfaehig: true,
+    hinweis: 'Grok (xAI) mit Bildgenerierung. Falls das Eingabefeld nicht vorausgefüllt ist, einfach den kopierten Prompt einfügen.',
+    getUrl: (prompt) => `https://grok.com/?q=${encodeURIComponent(prompt)}`,
   },
 ]
 
