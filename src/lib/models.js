@@ -30,14 +30,6 @@ export const MODELS = [
     hinweis: 'Erzeugt die Postkartenbilder direkt in Google Gemini.',
     getUrl: (prompt) => `https://gemini.google.com/app?q=${encodeURIComponent(prompt)}`,
   },
-  {
-    id: 'claude',
-    name: 'Claude',
-    color: '#d97706',
-    bildfaehig: false,
-    hinweis: 'Verfeinert Idee, Motivbeschreibung und Grußtext – erzeugt aber keine Bilder.',
-    getUrl: (prompt) => `https://claude.ai/new?q=${encodeURIComponent(prompt)}`,
-  },
 ]
 
 /**

@@ -1,20 +1,20 @@
-# 📮 Digitale Postkarte mit ChatGPT, Gemini & Claude
+# 📮 Digitale Postkarte mit ChatGPT & Gemini
 
 Eine Webseite, auf der man über ein Formular eine digitale Postkarte gestaltet.
 Aus den Eingaben wird ein fertiger Prompt gebaut, den man **an das KI-Modell
-seiner Wahl** übergeben kann – **ChatGPT**, **Gemini** oder **Claude** erstellen
-daraus die Postkarte mit **Vorder- und Rückseite**.
+seiner Wahl** übergeben kann – **ChatGPT** oder **Gemini** erstellen daraus die
+Postkarte mit **Vorder- und Rückseite**.
 
-Die Deep-Link-Integrationen der Modelle stammen aus der **PromptLib** und werden
-hier für den Postkarten-Anwendungsfall wiederverwendet.
+Es werden nur Modelle angeboten, die **Bilder erzeugen** können. Die
+Deep-Link-Integrationen stammen aus der **PromptLib** und werden hier für den
+Postkarten-Anwendungsfall wiederverwendet.
 
 ## Modelle
 
-| Modell  | Deep-Link                   | Bilder                                   |
-| ------- | --------------------------- | ---------------------------------------- |
-| ChatGPT | `chatgpt.com/?q=…`          | ✅ erzeugt die Postkartenbilder direkt   |
-| Gemini  | `gemini.google.com/app?q=…` | ✅ erzeugt die Postkartenbilder direkt   |
-| Claude  | `claude.ai/new?q=…`         | ✍️ verfeinert Idee & Text (keine Bilder) |
+| Modell  | Deep-Link                   | Bilder                                 |
+| ------- | --------------------------- | -------------------------------------- |
+| ChatGPT | `chatgpt.com/?q=…`          | ✅ erzeugt die Postkartenbilder direkt |
+| Gemini  | `gemini.google.com/app?q=…` | ✅ erzeugt die Postkartenbilder direkt |
 
 ## Funktionsweise
 
