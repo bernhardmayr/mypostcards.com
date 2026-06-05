@@ -274,6 +274,56 @@ body {
   margin: 0 0 0.9rem;
 }
 
+.actions__label {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.actions__models {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.btn-model {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid var(--model-color, var(--line));
+  border-left: 4px solid var(--model-color, var(--accent));
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--model-color, var(--ink));
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-model:hover {
+  background: var(--model-color, var(--accent));
+  color: #fff;
+}
+
+.btn-model__tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background: var(--line);
+  color: var(--muted);
+}
+
+.btn-model:hover .btn-model__tag {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
 .actions__buttons {
   display: flex;
   flex-wrap: wrap;
