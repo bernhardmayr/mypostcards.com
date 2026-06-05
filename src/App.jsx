@@ -43,8 +43,8 @@ export default function App() {
         <h1>📮 Digitale Postkarte</h1>
         <p>
           Gestalte Vorder- und Rückseite, dann übergeben wir alles als fertigen
-          Prompt an deinen eigenen ChatGPT-Account – ChatGPT erstellt daraus die
-          Postkarte.
+          Prompt an das KI-Modell deiner Wahl – ChatGPT, Gemini oder Claude
+          erstellen daraus die Postkarte.
         </p>
       </header>
 
@@ -61,9 +61,9 @@ export default function App() {
 
       <footer className="footer">
         <p>
-          Hinweis: Die Übergabe erfolgt über einen Link zu chatgpt.com. Dein
-          hochgeladenes Foto bleibt lokal in deinem Browser – häng es im
-          ChatGPT-Chat selbst an.
+          Hinweis: Die Übergabe erfolgt über einen Deep-Link zum gewählten
+          Modell. Dein hochgeladenes Foto bleibt lokal in deinem Browser – häng
+          es im Chat des Modells selbst an.
         </p>
       </footer>
     </div>
