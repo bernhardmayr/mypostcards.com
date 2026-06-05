@@ -43,8 +43,8 @@ export default function App() {
         <h1>📮 Digitale Postkarte</h1>
         <p>
           Gestalte Vorder- und Rückseite, dann übergeben wir alles als fertigen
-          Prompt an das KI-Modell deiner Wahl – ChatGPT oder Gemini erstellen
-          daraus die Postkarte.
+          Prompt an das bildfähige KI-Modell deiner Wahl – es erstellt daraus
+          die Postkarte.
         </p>
       </header>
 

@@ -1,20 +1,26 @@
-# 📮 Digitale Postkarte mit ChatGPT & Gemini
+# 📮 Digitale Postkarte mit mehreren KI-Modellen
 
 Eine Webseite, auf der man über ein Formular eine digitale Postkarte gestaltet.
-Aus den Eingaben wird ein fertiger Prompt gebaut, den man **an das KI-Modell
-seiner Wahl** übergeben kann – **ChatGPT** oder **Gemini** erstellen daraus die
-Postkarte mit **Vorder- und Rückseite**.
+Aus den Eingaben wird ein fertiger Prompt gebaut, den man **an das bildfähige
+KI-Modell seiner Wahl** übergeben kann – es erstellt daraus die Postkarte mit
+**Vorder- und Rückseite**.
 
 Es werden nur Modelle angeboten, die **Bilder erzeugen** können. Die
-Deep-Link-Integrationen stammen aus der **PromptLib** und werden hier für den
-Postkarten-Anwendungsfall wiederverwendet.
+Deep-Link-Integrationen orientieren sich an der **PromptLib** und werden hier für
+den Postkarten-Anwendungsfall wiederverwendet.
 
 ## Modelle
 
-| Modell  | Deep-Link                   | Bilder                                 |
-| ------- | --------------------------- | -------------------------------------- |
-| ChatGPT | `chatgpt.com/?q=…`          | ✅ erzeugt die Postkartenbilder direkt |
-| Gemini  | `gemini.google.com/app?q=…` | ✅ erzeugt die Postkartenbilder direkt |
+| Modell             | Deep-Link                       | Bilder | Prompt-Prefill |
+| ------------------ | ------------------------------- | ------ | -------------- |
+| ChatGPT            | `chatgpt.com/?q=…`              | ✅     | ✅ zuverlässig |
+| Gemini             | `gemini.google.com/app?q=…`     | ✅     | ✅ zuverlässig |
+| Bing Image Creator | `bing.com/images/create?q=…`    | ✅     | ✅ zuverlässig |
+| Copilot            | `copilot.microsoft.com/?q=…`    | ✅     | ⚠️ ggf. Prompt einfügen |
+| Grok               | `grok.com/?q=…`                 | ✅     | ⚠️ ggf. Prompt einfügen |
+
+> Bei Modellen mit unsicherem Prefill wird der Prompt beim Öffnen zusätzlich in
+> die Zwischenablage kopiert – so kann er notfalls manuell eingefügt werden.
 
 ## Funktionsweise
 
