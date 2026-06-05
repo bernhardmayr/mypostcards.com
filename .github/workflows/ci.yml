@@ -1,0 +1,28 @@
+name: CI
+
+# Validierender Build-Check – läuft bei Pull Requests und Pushes auf
+# Feature-Branches, ohne zu deployen. Das eigentliche Deployment übernimmt
+# weiterhin deploy.yml ausschließlich auf main.
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
